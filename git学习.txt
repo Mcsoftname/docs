@@ -1,0 +1,20 @@
+git config --global user.name "Ma chao"
+git config --global user.email "ma.chao@cennavi.com.cn"
+分布式版本控制系统 
+git config命令的--global 表示你这台机器上所有的Git仓库都会使用这个配置
+git 查看历史记录
+git log --pretty=oneline
+git 回退版本
+git reset --hard HEAD^
+记录每一次命令
+git reflog
+丢弃工作区的修改
+git checkout -- file
+暂存区的修改撤销掉
+git reset HEAD <file>
+从版本库中删除文件
+git rm  git commit
+用版本库里的版本替换工作区的版本
+git checkout -- file
+ssh-keygen -t rsa -C "ma.chao@cennavi.com.cn"
+
