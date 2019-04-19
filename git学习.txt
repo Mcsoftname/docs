@@ -15,6 +15,26 @@ git reset HEAD <file>
 从版本库中删除文件
 git rm  git commit
 用版本库里的版本替换工作区的版本
-git checkout -- file
+git checkout -- file 
+
 ssh-keygen -t rsa -C "ma.chao@cennavi.com.cn"
+
+创建dev分支，然后切换到dev分支
+git checkout -b dev
+合并分支
+git merge dev
+stash功能，可以把当前工作现场“储藏”起来，等以后恢复现场后继续工作
+git stash list命令查看
+git stash apply恢复 git stash drop来删除
+git stash pop，恢复的同时把stash内容也删了
+
+删除分支
+git branch -d dev
+分支未合并，强行删除分支
+git branch -D dev
+创建远程origin的dev分支到本地
+git checkout -b dev origin/dev
+设置dev和origin/dev的链接
+git branch --set-upstream-to=origin/dev dev
+
 
